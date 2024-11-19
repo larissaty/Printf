@@ -6,7 +6,7 @@
 /*   By: ltayra-y <ltayra-y@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 17:36:10 by ltayra-y          #+#    #+#             */
-/*   Updated: 2024/11/19 18:03:50 by ltayra-y         ###   ########.fr       */
+/*   Updated: 2024/11/19 19:47:41 by ltayra-y         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,8 +47,19 @@ int	str_format(va_list args, const char format)
 		len = len + print_str(va_arg(args, char *));
 	if (format == 'p')
 		len = len + print_ptr(va_arg(args, unsigned long long));
+	if (format == 'd' || format == 'i')
+		len = len + print_nbr(va_arg(args, int));
+	if (format == 'u')
+		len = len + print_unsigned(va_arg(args, int));
+	if (format == 'x')
+		len = len + print_hex(va_arg(args, unsigned long));
+	if (format == 'X')
+		len = len + print_hex_upper(va_arg(args, unsigned long));
 	else if (format == '%')
+	{
 		print_char('%');
+		len = len + 1;
+	}
 	return (len);
 }
 

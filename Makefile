@@ -6,7 +6,7 @@
 #    By: ltayra-y <ltayra-y@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/19 16:22:36 by ltayra-y          #+#    #+#              #
-#    Updated: 2024/11/19 17:57:11 by ltayra-y         ###   ########.fr        #
+#    Updated: 2024/11/19 19:43:48 by ltayra-y         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,6 +17,8 @@ CFLAGS = -Wall -Wextra -Werror
 SRC_FILES = ft_printf.c \
 			print_ptr.c \
 			print_str.c \
+			print_nbr.c \
+			print_hex.c \
 
 OBJ_FILES = $(SRC_FILES:.c=.o)
 

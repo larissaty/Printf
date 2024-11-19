@@ -6,7 +6,7 @@
 /*   By: ltayra-y <ltayra-y@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 15:58:35 by ltayra-y          #+#    #+#             */
-/*   Updated: 2024/11/19 18:10:29 by ltayra-y         ###   ########.fr       */
+/*   Updated: 2024/11/19 19:11:59 by ltayra-y         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,15 @@ int	print_str(char *s)
 {
 	size_t	len;
 
-	len = ft_strlen(s);
-	ft_putstr(s);
+	if (s == NULL)
+	{
+		len = ft_strlen("(null)");
+		ft_putstr("(null)");
+	}
+	else
+	{
+		len = ft_strlen(s);
+		ft_putstr(s);
+	}
 	return (len);
 }
