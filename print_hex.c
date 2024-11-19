@@ -6,7 +6,7 @@
 /*   By: ltayra-y <ltayra-y@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 19:22:58 by ltayra-y          #+#    #+#             */
-/*   Updated: 2024/11/19 19:49:54 by ltayra-y         ###   ########.fr       */
+/*   Updated: 2024/11/19 20:32:36 by ltayra-y         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,11 +33,8 @@ int	print_hex(unsigned long nbr)
 		nbr = nbr / 16;
 		i++;
 	}
-	while (i >= 0)
-	{
-		len = len + print_char(buffer[i]);
-		i--;
-	}
+	while (--i >= 0)
+		len += print_char(buffer[i]);
 	return (len);
 }
 
@@ -62,10 +59,7 @@ int	print_hex_upper(unsigned long nbr)
 		nbr = nbr / 16;
 		i++;
 	}
-	while (i >= 0)
-	{
-		len = len + print_char(buffer[i]);
-		i--;
-	}
+	while (--i >= 0)
+		len += print_char(buffer[i]);
 	return (len);
 }
