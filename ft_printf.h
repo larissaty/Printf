@@ -6,7 +6,7 @@
 /*   By: ltayra-y <ltayra-y@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 16:01:56 by ltayra-y          #+#    #+#             */
-/*   Updated: 2024/11/19 17:59:18 by ltayra-y         ###   ########.fr       */
+/*   Updated: 2024/11/19 18:10:03 by ltayra-y         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,9 @@
 # include <stdint.h>
 
 int	    print_char(char c);
-int		print_str(char *s);
 void	ft_putstr(char *s);
 size_t	ft_strlen(const char *s);
+int		print_str(char *s);
 int		ptr_len(uintptr_t ptr);
 void	ft_put_ptr(uintptr_t	ptr);
 int		print_ptr(unsigned long long ptr);
