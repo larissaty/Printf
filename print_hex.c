@@ -6,13 +6,13 @@
 /*   By: ltayra-y <ltayra-y@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 19:22:58 by ltayra-y          #+#    #+#             */
-/*   Updated: 2024/11/19 20:32:36 by ltayra-y         ###   ########.fr       */
+/*   Updated: 2024/11/20 13:57:15 by ltayra-y         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	print_hex(unsigned long nbr)
+int	print_hex(unsigned int nbr)
 {
 	char	*hex;
 	char	buffer[16];
@@ -38,7 +38,7 @@ int	print_hex(unsigned long nbr)
 	return (len);
 }
 
-int	print_hex_upper(unsigned long nbr)
+int	print_hex_upper(unsigned int nbr)
 {
 	char	*hex;
 	char	buffer[16];

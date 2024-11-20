@@ -6,7 +6,7 @@
 #    By: ltayra-y <ltayra-y@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/19 16:22:36 by ltayra-y          #+#    #+#              #
-#    Updated: 2024/11/19 19:43:48 by ltayra-y         ###   ########.fr        #
+#    Updated: 2024/11/20 14:03:09 by ltayra-y         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,7 @@ SRC_FILES = ft_printf.c \
 			print_str.c \
 			print_nbr.c \
 			print_hex.c \
+			print_unbr.c \
 
 OBJ_FILES = $(SRC_FILES:.c=.o)
 

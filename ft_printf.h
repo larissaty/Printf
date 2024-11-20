@@ -6,7 +6,7 @@
 /*   By: ltayra-y <ltayra-y@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 16:01:56 by ltayra-y          #+#    #+#             */
-/*   Updated: 2024/11/19 20:14:36 by ltayra-y         ###   ########.fr       */
+/*   Updated: 2024/11/20 14:04:10 by ltayra-y         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,12 @@ size_t	ft_strlen(const char *s);
 int		print_str(char *s);
 void	ft_putnbr(int n);
 int		print_nbr(int n);
-int		print_unsigned(int n);
-int		print_ptr(unsigned long long ptr);
-int		print_hex(unsigned long nbr);
-int		print_hex_upper(unsigned long nbr);
+int		nbrlen_un(unsigned int n);
+void	putnbr_un(unsigned int n);
+int		print_unsigned(unsigned int n);
+int		print_ptr(unsigned long ptr);
+int		print_hex(unsigned int nbr);
+int		print_hex_upper(unsigned int nbr);
 int		str_format(va_list args, const char str);
 int		ft_printf(const char *str, ...);
 
