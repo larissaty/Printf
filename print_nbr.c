@@ -6,17 +6,12 @@
 /*   By: ltayra-y <ltayra-y@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 18:21:42 by ltayra-y          #+#    #+#             */
-/*   Updated: 2024/11/20 14:04:21 by ltayra-y         ###   ########.fr       */
+/*   Updated: 2024/11/20 14:32:07 by ltayra-y         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-	return ;
-}
+#include <limits.h>
 
 int	nbrlen(int n)
 {

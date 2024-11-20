@@ -6,7 +6,7 @@
 /*   By: ltayra-y <ltayra-y@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 15:58:35 by ltayra-y          #+#    #+#             */
-/*   Updated: 2024/11/19 19:11:59 by ltayra-y         ###   ########.fr       */
+/*   Updated: 2024/11/20 14:32:18 by ltayra-y         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,12 @@ int	print_char(char c)
 {
 	write(1, &c, 1);
 	return (1);
+}
+
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+	return ;
 }
 
 void	ft_putstr(char *s)

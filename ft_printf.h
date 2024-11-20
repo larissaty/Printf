@@ -6,7 +6,7 @@
 /*   By: ltayra-y <ltayra-y@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 16:01:56 by ltayra-y          #+#    #+#             */
-/*   Updated: 2024/11/20 14:04:10 by ltayra-y         ###   ########.fr       */
+/*   Updated: 2024/11/20 14:28:53 by ltayra-y         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,6 @@
 
 # include <stdarg.h>
 # include <unistd.h>
-# include <stdint.h>
-# include <limits.h>
 
 int		nbrlen(int n);
 int		print_char(char c);
