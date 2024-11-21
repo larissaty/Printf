@@ -6,7 +6,7 @@
 #    By: ltayra-y <ltayra-y@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/19 16:22:36 by ltayra-y          #+#    #+#              #
-#    Updated: 2024/11/20 14:03:09 by ltayra-y         ###   ########.fr        #
+#    Updated: 2024/11/21 14:50:21 by ltayra-y         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,7 @@ all: $(NAME)
 
 $(NAME): $(OBJ_FILES)
 		@ar rcs $(NAME) $(OBJ_FILES)
-		@ranlib $(NAME)
+
 %.o: %.c
 		@$(CC) $(CFLAGS) -c $< -o $@
 
