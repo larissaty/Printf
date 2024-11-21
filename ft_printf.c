@@ -6,7 +6,7 @@
 /*   By: ltayra-y <ltayra-y@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 17:36:10 by ltayra-y          #+#    #+#             */
-/*   Updated: 2024/11/20 13:59:52 by ltayra-y         ###   ########.fr       */
+/*   Updated: 2024/11/21 13:57:01 by ltayra-y         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_printf(const char *str, ...)
 {
 	va_list		args;
-	int			str_len;
+	size_t		str_len;
 	int			i;
 
 	va_start (args, str);

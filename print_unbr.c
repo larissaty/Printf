@@ -6,15 +6,15 @@
 /*   By: ltayra-y <ltayra-y@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 14:01:44 by ltayra-y          #+#    #+#             */
-/*   Updated: 2024/11/20 14:02:47 by ltayra-y         ###   ########.fr       */
+/*   Updated: 2024/11/21 14:21:29 by ltayra-y         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	nbrlen_un(unsigned int n)
+size_t	nbrlen_un(unsigned int n)
 {
-	int	len;	
+	size_t	len;	
 
 	len = 1;
 	while (n > 9)
@@ -45,9 +45,6 @@ void	putnbr_un(unsigned int n)
 
 int	print_unsigned(unsigned int n)
 {
-	int	len;
-
-	len = nbrlen_un(n);
 	putnbr_un (n);
-	return (len);
+	return (nbrlen_un(n));
 }

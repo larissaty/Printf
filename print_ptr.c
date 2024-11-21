@@ -6,7 +6,7 @@
 /*   By: ltayra-y <ltayra-y@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 14:16:30 by ltayra-y          #+#    #+#             */
-/*   Updated: 2024/11/20 14:00:17 by ltayra-y         ###   ########.fr       */
+/*   Updated: 2024/11/21 14:10:49 by ltayra-y         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,17 +16,13 @@ int	print_ptr(unsigned long ptr)
 {
 	char	*hex;
 	char	buffer[16];
+	size_t	len;
 	int		i;
-	int		len;
 
 	hex = "0123456789abcdef";
 	if (ptr == 0)
-	{
-		print_str("(nil)");
-		return (5);
-	}
+		return (print_str("(nil)"));
 	i = 0;
-	len = 0;
 	while (ptr > 0)
 	{
 		buffer[i++] = hex[ptr % 16];

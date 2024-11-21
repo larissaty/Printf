@@ -6,7 +6,7 @@
 /*   By: ltayra-y <ltayra-y@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 19:22:58 by ltayra-y          #+#    #+#             */
-/*   Updated: 2024/11/20 13:57:15 by ltayra-y         ###   ########.fr       */
+/*   Updated: 2024/11/21 14:45:06 by ltayra-y         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,15 +16,12 @@ int	print_hex(unsigned int nbr)
 {
 	char	*hex;
 	char	buffer[16];
+	size_t	len;
 	int		i;
-	int		len;
 
 	hex = "0123456789abcdef";
 	if (nbr == 0)
-	{
-		print_char('0');
-		return (1);
-	}
+		return (print_char('0'));
 	i = 0;
 	len = 0;
 	while (nbr > 0)
@@ -42,15 +39,12 @@ int	print_hex_upper(unsigned int nbr)
 {
 	char	*hex;
 	char	buffer[16];
+	size_t	len;
 	int		i;
-	int		len;
 
 	hex = "0123456789ABCDEF";
 	if (nbr == 0)
-	{
-		print_char('0');
-		return (1);
-	}
+		return (print_char('0'));
 	i = 0;
 	len = 0;
 	while (nbr > 0)

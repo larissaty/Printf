@@ -6,23 +6,20 @@
 /*   By: ltayra-y <ltayra-y@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 18:21:42 by ltayra-y          #+#    #+#             */
-/*   Updated: 2024/11/20 14:32:07 by ltayra-y         ###   ########.fr       */
+/*   Updated: 2024/11/21 14:15:02 by ltayra-y         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 #include <limits.h>
 
-int	nbrlen(int n)
+size_t	nbrlen(int n)
 {
-	int	len;	
+	size_t	len;	
 
 	len = 1;
 	if (n == INT_MIN)
-	{
-		len = 11;
-		return (len);
-	}
+		return (ft_strlen("-2147483648"));
 	if (n < 0)
 	{
 		n = n * (-1);
@@ -66,9 +63,6 @@ void	ft_putnbr(int n)
 
 int	print_nbr(int n)
 {
-	int	len;
-
-	len = nbrlen(n);
 	ft_putnbr (n);
-	return (len);
+	return (nbrlen(n));
 }
